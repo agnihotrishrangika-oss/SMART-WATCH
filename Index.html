@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stopwatch App</title>
+    <link rel="stylesheet" href="Styling.css">
+    <link rel="icon" type="image/png" href="C:\Users\kvmat\OneDrive\Desktop\Prodigy Work\STOPWATCH\Stopwatch.png">
+
+
+</head>
+<body>
+
+<!-- Dark / Light Mode Toggle -->
+<button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+
+<div class="container">
+    <h2>⏱ Stopwatch</h2>
+    <h1 id="time">00:00:00</h1>
+
+    <div class="controls">
+        <button class="start" onclick="start()">▶️ Start</button>
+        <button class="pause" onclick="pause()">⏸️ Pause</button>
+        <button class="reset" onclick="reset()">🔁 Reset</button>
+        <button class="lap" onclick="lap()">🏁 Lap</button>
+    </div>
+
+    <ul id="lapList"></ul>
+</div>
+
+<!-- Sound Effects -->
+<audio id="startSound" src="https://assets.mixkit.co/sfx/preview/mixkit-game-click-1114.mp3"></audio>
+<audio id="pauseSound" src="https://assets.mixkit.co/sfx/preview/mixkit-arcade-retro-changing-tab-206.wav"></audio>
+<audio id="resetSound" src="https://assets.mixkit.co/sfx/preview/mixkit-negative-guitar-tone-2324.wav"></audio>
+<audio id="lapSound" src="https://assets.mixkit.co/sfx/preview/mixkit-select-click-1109.wav"></audio>
+
+<script src="Working.js"></script>
+</body>
+</html>
